@@ -28,4 +28,4 @@ Các ràng buộc về tên hàm
 Javascript có các ràng buộc về tên hàm sau đây:
 Tên hàm phải được bắt đầu bằng chữ cái (a-z,A-Z) hoặc ký tự _.
 Tên hàm không được bắt đầu bằng số, các ký tự khác ký tự _.
-hgjgh
+hgjghhgjg
