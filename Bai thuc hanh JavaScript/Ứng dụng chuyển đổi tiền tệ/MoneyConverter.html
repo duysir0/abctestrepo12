@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+
+</head>
+<body>
+<h1>Ứng dụng chuyển đổi tiền tệ</h1>
+<p id="content1"></p>
+<table>
+    <tbody>
+    <tr>
+        <th>Nhập số tiền</th>
+        <th>Từ loại tiền</th>
+        <th>Tới loại tiền</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="giatriAmount">
+        </td>
+        <td><select id="giatriFromCurr">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+        </td>
+        <td><select id="giatriToCurr">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+        </td>
+        <td>
+            <button onClick = "InnConvert()">Quy Đổi</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+<p id="Result"><strong>Kết quả: </strong></p>
+<script src="MoneyConverter.js"></script>
+
+</body>
+</html>
