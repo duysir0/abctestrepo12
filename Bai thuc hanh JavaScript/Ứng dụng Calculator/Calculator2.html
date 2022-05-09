@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng Calc</title>
+</head>
+<body>
+<h1>Ứng dụng Calculator</h1>
+<table>
+    <tr>
+        <th>Số thứ 1</th>
+        <th>Số thứ 2</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="num1" placeholder="Nhập số 1"></td>
+        <td><input type="number" id="num2" placeholder="Nhập số 2"></td>
+    </tr>
+</table>
+<br>
+<tr>
+    <td>
+        <button onclick="functionTinh('+')">Cộng (+)</button>
+    </td>
+    <td>
+        <button onclick="functionTinh('-')">Trừ (-)</button>
+    </td>
+    <td>
+        <button onclick="functionTinh('X')">Nhân (X)</button>
+    </td>
+    <td>
+        <button onclick="functionTinh('/')">Chia (/)</button>
+    </td>
+</tr>
+<hr>
+<p> <strong>Kết quả:</strong></p>
+<p id="result"></p>
+<script src="Calculator2.js"></script>
+</body>
+</html>
