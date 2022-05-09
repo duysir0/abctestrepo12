@@ -6,9 +6,30 @@
 </head>
 <body>
 <h1>Ứng dụng kiểm tra năm nhuận</h1>
-<p id="content1"></p>
-<p>Có là năm nhuận?: </p>
-<p id="result"></p>
-<script src="LeapYeahTest.js"></script>
+<table style border>
+    <tr>
+        <th>Năm đã nhập</th>
+        <th>Có là năm nhuận?</th>
+    </tr>
+    <tr>
+        <td id="slot1" align="center"></td>
+        <td id="slot2" align="center"></td>
+    </tr>
+</table>
+
+<script>
+    let nhapNam = +prompt('Xin hãy nhập năm cần xét')
+    document.getElementById('slot1').innerHTML = (`${nhapNam}`)
+
+    if (nhapNam % 4 == 0 && nhapNam % 100 != 0) {
+        document.getElementById('slot2').innerHTML = (`Có`);
+    } else if (nhapNam % 100 == 0 && nhapNam % 400 != 0) {
+        document.getElementById('slot2').innerHTML = (`Không`);
+    } else if (nhapNam % 100 == 0 && nhapNam % 400 == 0) {
+        document.getElementById('slot2').innerHTML = (`Có`);
+    } else {
+        document.getElementById('slot2').innerHTML = (`Không`);
+    }
+</script>
 </body>
 </html>
