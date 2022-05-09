@@ -17,28 +17,33 @@
     </tr>
     <tr>
         <td>
-            <label for="giatriAmount"></label><input type="number" id="giatriAmount">
+            <input type="number" id="valueAmount">
         </td>
-        <td><label for="giatriFromCurr"></label><select id="giatriFromCurr">
-            <option value="VND">VND</option>
-            <option value="USD">USD</option>
+        <td><select id="valueFromCurr">
+            <option value="23000">VND</option>
+            <option value="1">USD</option>
         </select>
         </td>
-        <td><label for="giatriToCurr"></label><select id="giatriToCurr">
-            <option value="USD">USD</option>
-            <option value="VND">VND</option>
+        <td><select id="valueToCurr">
+            <option value="1">USD</option>
+            <option value="23000">VND</option>
         </select>
         </td>
         <td>
-            <button onClick=convertCurrency()>Quy Đổi</button>
+            <button onclick="conCurrency()">Quy Đổi</button>
         </td>
     </tr>
     </tbody>
 </table>
 <hr>
+<p><strong>Kết quả: </strong></p>
+<p id="Result"></p>
 <script src="MoneyConverter.js"></script>
-<p id="Result"><strong> </strong></p>
 
+<script>
+
+    }
+</script>
 
 </body>
 </html>

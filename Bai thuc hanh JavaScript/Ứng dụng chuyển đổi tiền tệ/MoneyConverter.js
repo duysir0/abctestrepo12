@@ -1,25 +1,12 @@
-let Amount = document.getElementById('giatriAmount').value;
-let fromCurrency = document.getElementById('giatriFromCurr').value;
-let toCurrency = document.getElementById('giatriToCurr').value;
-let currencyRate = {
-    "VND": 1,
-    "USD": 23
-};
+function conCurrency() {
+    Amount = document.getElementById('valueAmount').value;
+    fromCurrency = document.getElementById('valueFromCurr').value;
+    toCurrency = document.getElementById('valueToCurr').value;
+    ketQua = Amount * toCurrency / fromCurrency;
+    document.getElementById('Result').innerHTML =
+        ketQua;
 
-function convertCurrency() {
-    let rateHientai = currencyRate * fromCurrency;
-    let rateChuyentoi = currencyRate * toCurrency;
-    let tienHientai = Amount * rateHientai;
-    let tiendaQuyDoi = tienHientai / rateChuyentoi;
-
-    return tiendaQuyDoi;
-    }
-
-    let tongtiendaQuydoi = convertCurrency();
-    let ketQua = document.getElementById('Result').innerHTML =
-    (` ${tongtiendaQuydoi}`)
 // Ý tưởng: function (khi chọn 1 bên là VND > Bên còn lại tự set thành giá trị còn lại
-
 // fromCurrency.addEventListener('change',smartCurrencySelect())
 
 // if(fromCurrency=="USD") {toCurrency="VND"};
