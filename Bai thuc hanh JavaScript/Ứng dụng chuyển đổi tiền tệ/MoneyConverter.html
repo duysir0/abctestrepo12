@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Ứng dụng chuyển đổi tiền tệ</title>
-    <script src="MoneyConverter.js"></script>
 
 </head>
 <body>
@@ -21,17 +20,18 @@
             <input type="number" id="valueAmount">
         </td>
         <td><select id="valueFromCurr">
-            <option value="23000">VND</option>
-            <option value="1">USD</option>
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
         </select>
         </td>
         <td><select id="valueToCurr">
-            <option value="1">USD</option>
-            <option value="23000">VND</option>
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
         </select>
         </td>
         <td>
             <button onclick="conCurrency()">Quy Đổi</button>
+            <button onclick="conCurrency2()">Quy Đổi 2</button>
         </td>
     </tr>
     </tbody>
@@ -39,6 +39,8 @@
 <hr>
 <p><strong>Kết quả: </strong></p>
 <p id="Result"></p>
+<p><strong>Kết quả2: </strong></p>
+<p id="Result2"></p>
 <script src="MoneyConverter.js"></script>
 
 </body>

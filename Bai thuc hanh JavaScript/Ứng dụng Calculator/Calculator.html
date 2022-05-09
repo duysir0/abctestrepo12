@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h1>Ứng dụng Máy tính</h1>
+<table>
+    <tr>
+        <th>Số thứ 1</th>
+        <th>Số thứ 2</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="num1"></td>
+        <td><input type="number" id="num2"></td>
+    </tr>
+</table>
+    <br>
+    <tr>
+        <td><button onclick="functionAdd()">Cộng (+)</button></td>
+        <td><button onclick="functionSubtract()">Trừ (-)</button></td>
+        <td><button onclick="functionMulti()">Nhân (X)</button></td>
+        <td><button onclick="functionDivide()">Chia (/)</button></td>
+    </tr>
+
+<hr>
+<p> <strong>Kết quả:</strong></p>
+<p id="result"></p>
+</body>
+<script src="Calculator.js"></script>
+</html>

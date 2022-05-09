@@ -1,51 +1,29 @@
 function conCurrency() {
-    Amount = document.getElementById('valueAmount').value;
-    fromCurrency = document.getElementById('valueFromCurr').value;
-    toCurrency = document.getElementById('valueToCurr').value;
-    ketQua = Amount * toCurrency / fromCurrency;
-    document.getElementById('Result').innerHTML =
-        ketQua;
+    let Amount = document.getElementById('valueAmount').value;
+    let fromCurr = document.getElementById('valueFromCurr').value;
+    let toCurr = document.getElementById('valueToCurr').value;
+    let Result;
+    if (fromCurr == "VND" && toCurr == "USD") {
+        Result = Amount / 23000;
+    } else if (fromCurr == "USD" && toCurr == "VND") {
+        Result = Amount * 23000;
+    } else {
+        Result = Amount;
+    }
+    document.getElementById('Result').innerHTML = `${Result}`;
+};
 
-// Ý tưởng: function (khi chọn 1 bên là VND > Bên còn lại tự set thành giá trị còn lại
-// fromCurrency.addEventListener('change',smartCurrencySelect())
-
-// if(fromCurrency=="USD") {toCurrency="VND"};
-// else {toCurrency="USD"};
-    // if (fromCurrency.value === "VND") {toCurrency.value.set = "USD";}
-    // else {toCurrency.value = "VND";}
-
-
-
-
-
+function conCurrency2() {
+    let Amount = document.getElementById('valueAmount').selectedIndex;
+    let fromCurr = document.getElementById('valueFromCurr').selectedIndex;
+    let toCurr = document.getElementById('valueToCurr').selectedIndex;
+    let Result;
+    if (fromCurr == 0 && toCurr == "0") {
+        Result = Amount / 23000;
+    } else if (fromCurr == 1 && toCurr == 1) {
+        Result = Amount * 23000;
+    } else {
+        Result = Amount;
+    }
+    document.getElementById('Result2').innerHTML = `${Result}`;
 }
-//{
-//
-// Let C
-// }*/
-
-
-// let InnConvert =
-// addEventListener()
-
-// function ChangeMoney() {
-//     let Amount = document.getElementById("Amount").value;
-//     let FromC = document.getElementById("From").value;
-//     let To = document.getElementById("To").value;
-//     let Result;
-//
-//
-//     if (FromC == "USD" && To == "VND") {
-//         Result = "Result: " + (Amount * 23000) + " Đ";
-//     }
-//     else if (FromC == "VND"&& To =="USD"){
-//         Result = "Result: "+ (Amount / 23000) + " $";
-//     }
-//     else if (FromC == "VND") {
-//         Result = "Result: " + Amount + " Đ"
-//     } else {
-//         Result = "Result: " + Amount + " $"
-//     }
-//
-//     document.getElementById("Result").innerHTML = Result;
-// }
