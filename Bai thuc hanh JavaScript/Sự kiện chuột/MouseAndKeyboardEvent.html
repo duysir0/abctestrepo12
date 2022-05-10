@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện chuột vaf</title>
+    <script defer src="MouseAndKeyboardEvent.js"></script>
+</head>
+<body onkeydown="dichuyenPhim()">
+<form>
+    <img id="myImage"
+         src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg"
+         style="
+                 width: 10%;
+                 left: 0px;
+                 top: 0px;
+                 position: relative
+                "
+    >
+    <p>Ấn <b>nút phía dưới</b> hoặc dùng <b>Phím WASD</b> để di chuyển quả bóng</p>
+    <table>
+        <input type="button" value="Di chuyên Trái" onclick="moveLeft();">
+        <input type="button" value="Di chuyên Lên" onclick="moveUp();">
+        <input type="button" value="Di chuyên Xuống" onclick="moveDown();">
+        <input type="button" value="Di chuyên Phải" onclick="moveRight()">
+    </table>
+    <h1>Sự kiện Chuột và Phím</h1>
+</form>
+</body>
+</html>
