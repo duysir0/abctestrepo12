@@ -10,6 +10,7 @@ function abc()
         document.getElementById("result").innerHTML = (`Bình Thường`);
     else if (bmi < 30.0)
         document.getElementById("result").innerHTML =  (`Hơi béo`);
-    else
-        document.getElementById("result").innerHTML =  (`Khủng long`);
+    else if (bmi >= 30.0)
+        document.getElementById("result").innerHTML =  (`Khủng long`)
+    else ;
 }
