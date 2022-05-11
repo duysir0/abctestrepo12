@@ -1,4 +1,4 @@
-//Function di chuyển bằng phím chuột ấn button
+//Function di chuyển bằng phím chuột ấn button - gán event 'onclick' cho button tương ứng
 function moveRight() {
     imgObj = document.getElementById('myImage');
     imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
