@@ -31,11 +31,11 @@ function dichuyenPhim() {
         case 39:    //phim mũi tên Phải
             moveRight()   //gọi function moveRight() - di chuyên hình sang phải 10 pixel
             break;
-        case 87:    //phím W lên trên 10 pixel
+        case 87:    //phím W
         case 38:    //phím mũi tên Up
             moveUp() //gọi function moveUp() - di chuyên hình lên trên 10 pixel
             break;
-        case 83:    //phím S xuống dưới 10 pixel
+        case 83:    //phím S
         case 40:    //phím mũi tên Down
             moveDown()     //gọi function moveDown() - di chuyên hình xuống 10 pixel
             break;
