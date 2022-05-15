@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xóa phần tử trong Mảng</title>
+</head>
+<body>
+<h1>Xóa phần tử nhập</h1>
+</body>
+<p>Có mảng X = [1,2,3,4,5,6,7,8,9,10]
+<hr>Vị trí cần xóa (index): <p id="indexdaNhap"></p>
+</p>
+<p>Mảng X sau khi bị xóa:</p>
+<p id="afterSpliced"></p>
+<p>Phần tử bị xóa:</p>
+<p id="splicedElem"></p>
+
+
+
+<p id="hehe"></p>
+<script>
+    //Array.splice( index, remove_count, item_list )
+    x = [1,2,3,4,5,6,7,8,9,10];
+    indexCanXoa = +prompt(`Cho mảng x = [1,2,3,4,5,6,7,8,9,10]
+    Nhập vị trí cần xóa`);
+
+    spliceX = x.splice(indexCanXoa,1,);
+
+    document.getElementById('indexdaNhap').innerHTML =
+        `[${indexCanXoa}]`;
+    document.getElementById('afterSpliced').innerHTML =
+        `${x}`;
+    document.getElementById('splicedElem').innerHTML =
+        `${spliceX}`;
+
+</script>
+</html>
