@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm phần tử trong Mảng</title>
+</head>
+<body>
+<h1>Nhập thêm phần tử</h1>
+</body>
+<p>Có mảng X = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
+<hr>
+<p>Vị trí thêm (index):</p>
+<p id="indexdaNhap"></p>
+<p>Mảng X sau khi được thêm:</p>
+<p id="afterSpliced"></p>
+<p>Phần tử được thêm:</p>
+<p id="splicedElem"></p>
+
+<script>
+    //Array.splice( index, remove_count, added ele at said index )
+    x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    indexCanThem = prompt(`Cho mảng x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    Nhập vị trí (index) cần thêm:`);
+    eleCanThem = prompt(`Nhập phần tử (element) sẽ thêm:`);
+    spliceX = x.splice(indexCanThem,0,eleCanThem);
+
+    document.getElementById('indexdaNhap').innerHTML =
+        `[${indexCanThem}]`;
+    document.getElementById('afterSpliced').innerHTML =
+        `[${x}]`;
+    document.getElementById('splicedElem').innerHTML =
+        `${eleCanThem}`;
+
+</script>
+</html>
